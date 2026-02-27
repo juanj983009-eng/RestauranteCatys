@@ -46,3 +46,11 @@ El sistema está desarrollado bajo una arquitectura de capas para garantizar la 
     * Abrir el archivo `frontend/index.html` en un navegador web compatible.
 
 ## Estructura de Capas
+
+El sistema sigue el patrón de arquitectura de capas (n-tier architecture), lo cual permite una clara separación de responsabilidades y mejora la mantenibilidad del código.
+
+
+1. **Capa de Controlador (Controller)**: Expone los endpoints REST y maneja la comunicación con el frontend.
+2. **Capa de Servicio (Service)**: Contiene la lógica de negocio, validaciones y reglas del sistema (ej. cálculo de totales, gestión de inventario).
+3. **Capa de Repositorio (Repository)**: Encargada de la persistencia de datos y comunicación directa con SQL Server mediante Spring Data JPA.
+4. **Capa de Modelo (Model)**: Define las entidades y estructuras de datos del sistema.
